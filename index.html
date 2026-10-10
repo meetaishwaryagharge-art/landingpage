@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AromaNest – Premium Perfumes & Agarbattis</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+</head>
+<body style="--footer-bg:#04251e">
+
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="logo-img" href="index.html"><img src="images/logo-aroma.jpg" alt="AromaNest"></a>
+      <button class="navbar-toggler border-0" data-bs-toggle="collapse" data-bs-target="#nav"><i class="bi bi-list fs-2"></i></button>
+      <div class="collapse navbar-collapse justify-content-center" id="nav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#perfumes">Perfumes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#agarbatti">Agarbatti</a></li>
+          <li class="nav-item"><a class="nav-link" href="#story">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" data-soon="Blog coming soon">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="#footer">Contact</a></li>
+        </ul>
+      </div>
+      <div class="nav-icons">
+        <a class="js-search" title="Search"><i class="bi bi-search"></i></a>
+        <a href="#" data-soon="Login coming soon"><i class="bi bi-person"></i></a>
+        <a class="js-cart" title="Cart"><i class="bi bi-bag"></i><span class="cart-badge">0</span></a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <img class="hero-img" src="images/hero.jpg" alt="AromaNest perfume and agarbatti">
+  <div class="slide on">
+    <div class="eyebrow">Premium Perfumes &amp; Agarbattis</div>
+    <h1>Essence of<br>Fragrance &amp; Peace</h1>
+    <p>Elevate your senses with our exquisite collection of perfumes and traditional agarbattis.</p>
+    <a href="#perfumes" class="btn btn-gold me-2">Shop Perfumes <i class="bi bi-arrow-right ms-1"></i></a>
+    <a href="#agarbatti" class="btn btn-ghost">Shop Agarbattis <i class="bi bi-arrow-right ms-1"></i></a>
+  </div>
+  <div class="slide">
+    <div class="eyebrow">New Arrivals</div>
+    <h1>Scents That<br>Tell Your Story</h1>
+    <p>Discover bold, musky and floral perfumes crafted for every mood and moment.</p>
+    <a href="#perfumes" class="btn btn-gold">Explore Perfumes <i class="bi bi-arrow-right ms-1"></i></a>
+  </div>
+  <div class="slide">
+    <div class="eyebrow">Sacred Scents</div>
+    <h1>Divine Aroma<br>For Every Home</h1>
+    <p>Hand-rolled agarbattis made with natural ingredients for a peaceful ambience.</p>
+    <a href="#agarbatti" class="btn btn-gold">Shop Agarbattis <i class="bi bi-arrow-right ms-1"></i></a>
+  </div>
+  <div class="slide">
+    <div class="eyebrow">Festive Gifting</div>
+    <h1>Gifts Wrapped<br>In Fragrance</h1>
+    <p>Curated gift sets that make every occasion memorable.</p>
+    <a href="#" class="btn btn-gold" data-soon="Gift sets coming soon">Shop Gift Sets <i class="bi bi-arrow-right ms-1"></i></a>
+  </div>
+  <div class="hero-dots"><button class="on"></button><button></button><button></button><button></button></div>
+</section>
+
+<!-- FEATURE STRIP -->
+<section class="feat-strip">
+  <div class="container">
+    <div class="row row-cols-2 row-cols-md-5 g-2" data-stagger>
+      <div class="col" data-reveal><div class="feat"><i class="bi bi-droplet-half"></i><b>Perfumes</b><small>Luxury Scents</small></div></div>
+      <div class="col" data-reveal><div class="feat"><i class="bi bi-brush"></i><b>Agarbatti</b><small>Pure &amp; Natural</small></div></div>
+      <div class="col" data-reveal><div class="feat"><i class="bi bi-gift"></i><b>Gift Sets</b><small>Perfect for Every Occasion</small></div></div>
+      <div class="col" data-reveal><div class="feat"><i class="bi bi-flower2"></i><b>Natural Ingredients</b><small>Safe &amp; Long Lasting</small></div></div>
+      <div class="col" data-reveal><div class="feat last"><i class="bi bi-truck"></i><b>Free Shipping</b><small>On Orders Above ₹999</small></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED PERFUMES -->
+<section class="sec" id="perfumes" style="background:linear-gradient(90deg,#f5eddc,#faf6ee)">
+  <div class="container">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-3 sec-head" data-reveal="left">
+        <div class="eyebrow">Featured Collection</div>
+        <h2>Premium Perfumes</h2>
+        <p>Discover fragrances that tell your story. From fresh and floral to bold and musky, find your perfect scent.</p>
+        <a href="product.html?id=royal-oud" class="btn btn-green">View All Perfumes <i class="bi bi-arrow-right ms-1"></i></a>
+      </div>
+      <div class="col-lg-9"><div class="row g-3" id="perfumeGrid" data-stagger></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- AGARBATTI -->
+<section class="agar-band" id="agarbatti">
+  <div class="row g-0 align-items-center">
+    <div class="col-lg-3" data-reveal="left"><div class="agar-img"><img src="images/agar-banner.jpg" alt="Premium agarbattis"></div></div>
+    <div class="col-lg-3 sec-head px-4 py-4" data-reveal>
+      <div class="eyebrow" style="font-size:9px">Traditional Fragrance</div>
+      <h2 style="font-size:25px">Premium Agarbattis</h2>
+      <p>Fill your space with divine fragrance. Our agarbattis are crafted with natural ingredients for a long-lasting and peaceful experience.</p>
+      <a href="product.html?id=chandan" class="btn btn-green">View All Agarbattis <i class="bi bi-arrow-right ms-1"></i></a>
+    </div>
+    <div class="col-lg-6 p-3"><div class="row g-3" id="agarGrid" data-stagger></div></div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE -->
+<section class="why">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-9">
+        <h3 data-reveal>Why Choose AromaNest?</h3>
+        <div class="row row-cols-2 row-cols-md-4 g-0" data-stagger>
+          <div class="col" data-reveal><div class="why-item"><div class="ic"><i class="bi bi-leaf"></i></div><b>100% Natural</b><small>Pure &amp; Safe Ingredients</small></div></div>
+          <div class="col" data-reveal><div class="why-item"><div class="ic"><i class="bi bi-shield-check"></i></div><b>Long Lasting</b><small>Fragrance &amp; Freshness</small></div></div>
+          <div class="col" data-reveal><div class="why-item"><div class="ic"><i class="bi bi-star"></i></div><b>Premium Quality</b><small>Crafted with Care</small></div></div>
+          <div class="col" data-reveal><div class="why-item" style="border:0"><div class="ic"><i class="bi bi-heart"></i></div><b>For Every Mood</b><small>Perfumes &amp; Agarbattis</small></div></div>
+        </div>
+      </div>
+      <div class="col-lg-3 d-none d-lg-block" data-reveal="right" style="border-left:1px solid var(--line)">
+        <div class="why-quote"><i class="bi bi-flower3 d-block fs-6 mb-1" style="color:var(--gold)"></i>More than just<br>a fragrance...<br>it's a feeling.</div>
+      </div>
+    </div>
+  </div>
+  <div class="leafdeco"></div>
+</section>
+
+<!-- STORY -->
+<section class="story" id="story">
+  <div class="row g-0 align-items-stretch">
+    <div class="col-lg-3" data-reveal="left"><div class="story-img1" style="overflow:hidden"><img src="images/story-1.jpg" alt="Incense bowl"></div></div>
+    <div class="col-lg-3 txt" data-reveal>
+      <div class="eyebrow" style="font-size:9px">Our Story</div>
+      <h2>Where Fragrance<br>Meets Tradition</h2>
+      <p>Born from a love for nature and a belief in the power of fragrance, AromaNest brings together the finest perfumes and traditional agarbattis to enrich your everyday moments.</p>
+      <a href="#" class="btn btn-green btn-sm" data-soon="Our story page coming soon">Know More <i class="bi bi-arrow-right ms-1"></i></a>
+    </div>
+    <div class="col-lg-3" data-reveal="zoom"><div class="story-img2" style="overflow:hidden"><img src="images/story-2.jpg" alt="Woman enjoying perfume"></div></div>
+    <div class="col-lg-3" data-reveal="right">
+      <div class="story-list">
+        <div><i class="bi bi-flower2"></i>Premium Fragrances<br>for Modern Life</div>
+        <div><i class="bi bi-fire"></i>Sacred Scents<br>for Peaceful Homes</div>
+        <div><i class="bi bi-heart"></i>Eco-Friendly<br>&amp; Skin Safe</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testi">
+  <div class="container position-relative">
+    <h3 class="serif" data-reveal>What Our Customers Say</h3>
+    <button class="t-arrow" id="tPrev" style="left:5%"><i class="bi bi-chevron-left"></i></button>
+    <div class="testi-box" data-reveal="zoom">
+      <div class="t-slide"><img class="avatar-img" src="images/avatar.jpg" alt="Priya Sharma"><div><p>“The fragrances are amazing and last really long. The agarbattis create such a peaceful vibe at home. Highly recommended!”</p><p class="fw-semibold">— Priya Sharma</p></div><div class="stars">★★★★★</div></div>
+      <div class="t-slide"><img class="avatar-img" src="images/avatar-priya.jpg" alt="Anjali Rao"><div><p>“Royal Essence is my signature scent now. Packaging is elegant and delivery was super quick.”</p><p class="fw-semibold">— Anjali Rao</p></div><div class="stars">★★★★★</div></div>
+      <div class="t-slide"><img class="avatar-img" src="images/avatar.jpg" alt="Meera Joshi"><div><p>“Chandan agarbatti fills the whole house with calm. Natural, never harsh. Will order again.”</p><p class="fw-semibold">— Meera Joshi</p></div><div class="stars">★★★★☆</div></div>
+      <div class="t-dots"><i></i><i></i><i></i></div>
+    </div>
+    <button class="t-arrow" id="tNext" style="right:5%"><i class="bi bi-chevron-right"></i></button>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="news">
+  <div class="container">
+    <div class="row align-items-center justify-content-center g-3" data-reveal>
+      <div class="col-auto d-flex align-items-center gap-3"><i class="bi bi-envelope mail"></i><div><h6>Stay Connected</h6><small class="text-muted" style="font-size:10px">Get updates on new arrivals, offers and more.</small></div></div>
+      <div class="col-auto"><form class="news-form"><input type="text" placeholder="Enter your email address"><button>Subscribe</button></form></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer" id="footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-3"><a class="footer-logo" href="index.html"><img src="images/logo-aroma-white.jpg" alt="AromaNest"></a></div>
+      <div class="col-6 col-lg-2"><h6>Quick Links</h6><a href="index.html">Home</a><a href="#perfumes">Perfumes</a><a href="#agarbatti">Agarbatti</a><a href="#story">About Us</a><a href="#footer">Contact</a></div>
+      <div class="col-6 col-lg-3"><h6>Customer Care</h6><a href="#" data-soon="Page coming soon">Shipping Policy</a><a href="#" data-soon="Page coming soon">Returns &amp; Exchange</a><a href="#" data-soon="Page coming soon">FAQ</a><a href="#" data-soon="Page coming soon">Terms &amp; Conditions</a><a href="#" data-soon="Page coming soon">Privacy Policy</a></div>
+      <div class="col-lg-3"><h6>Contact Us</h6><a href="tel:+919876543210"><i class="bi bi-telephone me-2"></i>+91 98765 43210</a><a href="mailto:hello@aromanest.in"><i class="bi bi-envelope me-2"></i>hello@aromanest.in</a><a href="#"><i class="bi bi-geo-alt me-2"></i>Mumbai, India</a></div>
+      <div class="col-lg-1 social text-lg-end"><a href="#"><i class="bi bi-facebook"></i></a><a href="#"><i class="bi bi-instagram"></i></a><a href="#"><i class="bi bi-youtube"></i></a><a href="#"><i class="bi bi-pinterest"></i></a></div>
+    </div>
+    <div class="copy d-flex justify-content-between flex-wrap"><span>© 2025 AromaNest. All rights reserved.</span><span>Fragrance &nbsp;|&nbsp; Nature &nbsp;|&nbsp; Tradition</span></div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="products.js"></script>
+<script src="main.js"></script>
+<script>
+document.getElementById('perfumeGrid').innerHTML =
+  ['blush-bloom','midnight-oud','royal-essence','citrus-fresh'].map(id => cardHTML(findProduct(id))).join('');
+document.getElementById('agarGrid').innerHTML =
+  ['chandan','mogra','rose','lavender'].map(id => miniHTML(findProduct(id))).join('');
+</script>
+</body>
+</html>

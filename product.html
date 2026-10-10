@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ScentAura</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+</head>
+<body style="--footer-bg:#022c25">
+
+<div class="topbar">
+  <div class="container d-flex justify-content-between align-items-center">
+    <span><i class="bi bi-truck me-2"></i>Free Shipping on Orders Above ₹999</span>
+    <span class="d-none d-md-inline"><i class="bi bi-lightning-charge me-2"></i>Authentic &amp; Premium Fragrances</span>
+    <span>Follow Us: <i class="bi bi-facebook mx-1"></i><i class="bi bi-instagram mx-1"></i><i class="bi bi-youtube mx-1"></i><i class="bi bi-pinterest mx-1"></i></span>
+  </div>
+</div>
+
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="logo-img" href="index.html"><img src="images/logo-scent.jpg" alt="ScentAura"></a>
+      <button class="navbar-toggler border-0" data-bs-toggle="collapse" data-bs-target="#nav"><i class="bi bi-list fs-2"></i></button>
+      <div class="collapse navbar-collapse justify-content-center" id="nav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="index.html#perfumes">Perfumes</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#agarbatti">Agarbatti</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" data-soon="Combo offers coming soon">Combo Offers</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#story">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#footer">Contact</a></li>
+        </ul>
+      </div>
+      <div class="nav-icons">
+        <a class="js-search" title="Search"><i class="bi bi-search"></i></a>
+        <a href="#" data-soon="Login coming soon"><i class="bi bi-person"></i></a>
+        <a class="js-cart" title="Cart"><i class="bi bi-bag"></i><span class="cart-badge">0</span></a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- BANNER -->
+<section class="page-banner">
+  <img class="banner-img" src="images/banner-bottle.jpg" alt="">
+  <div class="container position-relative h-100 d-flex flex-column justify-content-center">
+    <h2 data-reveal="left">Fragrance for Every Mood</h2>
+    <p data-reveal="left" style="--d:.15s">Luxury Perfumes &nbsp;|&nbsp; Pure Agarbatti &nbsp;|&nbsp; Divine Moments</p>
+  </div>
+</section>
+
+<div class="container">
+  <div class="crumb"><a href="index.html">Home</a> <i class="bi bi-chevron-right"></i> <a href="index.html#perfumes" id="crumbType">Perfumes</a> <i class="bi bi-chevron-right"></i> <b class="fw-medium" id="crumbName"></b></div>
+
+  <!-- PRODUCT -->
+  <div class="row g-4 mb-4">
+    <div class="col-lg-6" data-reveal="left">
+      <div class="gallery">
+        <div class="thumbs" id="thumbs"></div>
+        <div class="main-img" id="mainBox">
+          <button class="wish" id="mainWish" style="top:12px;right:12px"><i class="bi bi-heart"></i></button>
+          <button class="m-arrow" id="mPrev" style="left:12px"><i class="bi bi-chevron-left"></i></button>
+          <button class="m-arrow" id="mNext" style="right:12px"><i class="bi bi-chevron-right"></i></button>
+          <img id="mainImg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6" data-reveal="right">
+      <span class="badge-best" id="pBadge"></span>
+      <h1 class="p-title" id="pTitle"></h1>
+      <div class="p-sub" id="pSub"></div>
+      <div class="rating mt-2" style="font-size:12px" id="pRating"></div>
+      <div class="p-price" id="pPrice"></div>
+      <p id="pShort" style="font-size:12.5px;color:#55605b;line-height:1.7;max-width:480px"></p>
+      <div class="row g-2 my-3" id="pFeats"></div>
+      <div class="d-flex gap-3 mb-3">
+        <div class="qty"><button id="qMinus" type="button">−</button><span id="qVal">1</span><button id="qPlus" type="button">+</button></div>
+        <button class="btn-green flex-fill" id="addBtn" type="button"><i class="bi bi-cart2 me-2"></i>Add to Cart</button>
+      </div>
+      <button class="btn-outline-g w-100 mb-3" id="buyBtn" type="button"><i class="bi bi-lightning-charge me-2"></i>Buy Now</button>
+      <div class="d-flex justify-content-between align-items-center" style="font-size:11px">
+        <a href="#" id="wishLink"><i class="bi bi-heart me-1"></i>Add to Wishlist</a>
+        <span class="social">Share:
+          <a href="#" data-share="facebook" style="color:var(--ink);font-size:12px"><i class="bi bi-facebook"></i></a>
+          <a href="#" data-share="twitter" style="color:var(--ink);font-size:12px"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" data-share="pinterest" style="color:var(--ink);font-size:12px"><i class="bi bi-pinterest"></i></a>
+          <a href="#" data-share="whatsapp" style="color:var(--ink);font-size:12px"><i class="bi bi-whatsapp"></i></a></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- TABS -->
+  <ul class="p-tabs" id="pTabs" data-reveal>
+    <li><button class="nav-link active" data-tab="t1" type="button">Description</button></li>
+    <li><button class="nav-link" data-tab="t2" type="button">Fragrance Notes</button></li>
+    <li><button class="nav-link" data-tab="t3" type="button">Ingredients</button></li>
+    <li><button class="nav-link" data-tab="t4" type="button">How to Use</button></li>
+    <li><button class="nav-link" data-tab="t5" type="button">Shipping &amp; Returns</button></li>
+  </ul>
+  <div class="py-4" style="border-top:1px solid var(--line);margin-top:-1px">
+    <div class="tab-pane2 show" id="t1">
+      <div class="row g-4">
+        <div class="col-lg-4"><h5 class="serif">About This Fragrance</h5><p id="aboutTxt" style="font-size:11.5px;color:#55605b;line-height:1.7"></p></div>
+        <div class="col-lg-5" style="border-left:1px solid var(--line);border-right:1px solid var(--line)">
+          <h5 class="serif ps-3">Fragrance Notes</h5>
+          <div class="row g-0 text-center" id="notes"></div>
+        </div>
+        <div class="col-lg-3">
+          <div class="assure">
+            <div><i class="bi bi-shield-check"></i><span><b>100% Original Products</b><small>Guaranteed authenticity</small></span></div>
+            <div><i class="bi bi-shield-lock"></i><span><b>Secure Payments</b><small>Your privacy is our priority</small></span></div>
+            <div><i class="bi bi-arrow-repeat"></i><span><b>Easy Returns</b><small>Hassle-free shopping</small></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane2" id="t2"><div class="row g-3" id="notes2"></div></div>
+    <div class="tab-pane2" id="t3"><h5 class="serif">Ingredients</h5><p id="ingTxt" style="font-size:12.5px;color:#55605b;max-width:700px;line-height:1.8"></p></div>
+    <div class="tab-pane2" id="t4"><h5 class="serif">How to Use</h5><ol class="how-list" id="howList"></ol></div>
+    <div class="tab-pane2" id="t5"><h5 class="serif">Shipping &amp; Returns</h5>
+      <ul class="how-list"><li>Free shipping on orders above ₹999; ₹59 flat shipping below that.</li><li>Delivery within 3–7 working days across India.</li><li>Easy 7-day returns on unopened, unused products in original packaging.</li><li>Refunds are processed to the original payment method within 5–7 working days.</li></ul></div>
+  </div>
+</div>
+
+<!-- EXPERIENCE + REVIEWS -->
+<section>
+  <div class="row g-0">
+    <div class="col-lg-7" data-reveal="left">
+      <div class="exp h-100">
+        <img class="exp-img" src="images/exp-banner.jpg" alt="">
+        <div class="eyebrow">A timeless blend of tradition &amp; luxury</div>
+        <h2>More Than Just a Fragrance<br>It’s an Experience</h2>
+        <p>Let the rich aroma of <span id="expName">Royal Oud</span> fill your space and elevate your senses.</p>
+        <a href="index.html#perfumes" class="btn-sand d-inline-block">Explore More Perfumes <i class="bi bi-arrow-right ms-1"></i></a>
+      </div>
+    </div>
+    <div class="col-lg-5" data-reveal="right" style="background:#f6f2e8;padding:14px">
+      <div class="reviews">
+        <h5 class="serif m-0">Customer Reviews</h5>
+        <div class="d-flex align-items-center gap-3 my-2 flex-wrap">
+          <span class="score" id="score"></span><span class="rating" style="font-size:13px" id="scoreStars"></span><small class="text-muted" style="font-size:10px" id="scoreCount"></small>
+          <button class="btn-green ms-auto" style="padding:7px 14px;font-size:10.5px" id="writeRev" type="button">Write a Review</button>
+        </div>
+        <div style="max-width:260px">
+          <div class="d-flex align-items-center gap-2" style="font-size:9.5px">5★<div class="bar flex-fill"><i data-w="82%"></i></div>82%</div>
+          <div class="d-flex align-items-center gap-2" style="font-size:9.5px">4★<div class="bar flex-fill"><i data-w="12%"></i></div>12%</div>
+          <div class="d-flex align-items-center gap-2" style="font-size:9.5px">3★<div class="bar flex-fill"><i data-w="4%"></i></div>4%</div>
+        </div>
+        <hr>
+        <div id="reviewList" style="max-height:260px;overflow:auto"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- YOU MAY ALSO LIKE -->
+<section class="container py-4">
+  <h3 class="serif m-0" data-reveal>You May Also Like</h3>
+  <small class="text-muted d-block mb-3" data-reveal>Explore more fragrances and premium agarbattis</small>
+  <div class="row g-3">
+    <div class="col-lg-9"><div class="also-wrap">
+      <button class="arrow" id="alsoPrev" style="left:-12px"><i class="bi bi-chevron-left"></i></button>
+      <div class="also-scroll" id="alsoGrid"></div>
+      <button class="arrow" id="alsoNext" style="right:-12px"><i class="bi bi-chevron-right"></i></button>
+    </div></div>
+    <div class="col-lg-3" data-reveal="right"><a href="product.html?id=chandan" class="promo-link"><img src="images/promo-agar.jpg" alt="Premium Agarbattis"></a></div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer" id="footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-2"><a class="footer-logo" href="index.html"><img src="images/logo-scent-white.jpg" alt="ScentAura"></a></div>
+      <div class="col-6 col-lg-2"><h6>Quick Links</h6><a href="index.html">Home</a><a href="index.html#perfumes">Perfumes</a><a href="index.html#agarbatti">Agarbatti</a><a href="index.html#story">About Us</a><a href="#footer">Contact</a></div>
+      <div class="col-6 col-lg-2"><h6>Customer Care</h6><a href="#" data-soon="Page coming soon">Shipping Policy</a><a href="#" data-soon="Page coming soon">Returns &amp; Refunds</a><a href="#" data-soon="Page coming soon">FAQ</a><a href="#" data-soon="Page coming soon">Terms &amp; Conditions</a><a href="#" data-soon="Page coming soon">Privacy Policy</a></div>
+      <div class="col-lg-3"><h6>Contact Us</h6><a href="tel:+919876543210"><i class="bi bi-telephone me-2"></i>+91 98765 43210</a><a href="mailto:care@scentaura.in"><i class="bi bi-envelope me-2"></i>care@scentaura.in</a><a href="#"><i class="bi bi-geo-alt me-2"></i>Mumbai, India</a></div>
+      <div class="col-lg-3 f-news"><h6>Subscribe to our Newsletter</h6><small style="font-size:9.5px">Get exclusive offers and updates</small>
+        <form class="news-form position-relative mt-2"><input type="text" placeholder="Enter your email address"><button class="go"><i class="bi bi-arrow-right"></i></button></form></div>
+    </div>
+    <div class="copy d-flex justify-content-between align-items-center flex-wrap gap-2"><span>© 2025 ScentAura. All rights reserved.</span><span class="social"><a href="#"><i class="bi bi-facebook"></i></a><a href="#"><i class="bi bi-instagram"></i></a><a href="#"><i class="bi bi-youtube"></i></a><a href="#"><i class="bi bi-pinterest"></i></a></span><a href="#" onclick="scrollTo({top:0});return false" style="margin:0"><i class="bi bi-arrow-up"></i> Back to top</a></div>
+  </div>
+</footer>
+
+<!-- review modal -->
+<div class="modal fade" id="revModal" tabindex="-1"><div class="modal-dialog modal-dialog-centered"><form class="modal-content p-3" id="revForm">
+  <h5 class="serif">Write a Review</h5>
+  <div class="star-pick mb-2" id="starPick"><i class="bi bi-star-fill on"></i><i class="bi bi-star-fill on"></i><i class="bi bi-star-fill on"></i><i class="bi bi-star-fill on"></i><i class="bi bi-star-fill on"></i></div>
+  <input class="form-control mb-2" id="revName" placeholder="Your name" required>
+  <textarea class="form-control mb-3" id="revText" rows="3" placeholder="Share your experience" required></textarea>
+  <button class="btn-green">Submit Review</button>
+</form></div></div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="products.js"></script>
+<script src="main.js"></script>
+<script>
+(function(){
+  const $=(s,c=document)=>c.querySelector(s);
+  const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const p=findProduct(new URLSearchParams(location.search).get('id'))||findProduct('royal-oud');
+  const isPerf=p.type==='perfume';
+  document.title=p.name+' – ScentAura';
+
+  /* ----- basic details ----- */
+  $('#crumbName').textContent=p.name; $('#expName').textContent=p.name;
+  $('#crumbType').textContent=isPerf?'Perfumes':'Agarbatti';
+  $('#crumbType').href='index.html#'+(isPerf?'perfumes':'agarbatti');
+  $('#pBadge').textContent=p.tag||(isPerf?'PERFUME':'AGARBATTI');
+  $('#pTitle').textContent=p.name; $('#pSub').textContent=p.sub;
+  $('#pRating').innerHTML=stars(p.rating)+` <span style="color:var(--ink);font-size:12px;margin-left:4px">${p.rating} (${p.reviews} Reviews)</span>`;
+  const off=p.mrp?Math.round((1-p.price/p.mrp)*100):0;
+  $('#pPrice').innerHTML=rupee(p.price)+(p.mrp?` <del>${rupee(p.mrp)}</del> <span class="off">${off}% OFF</span>`:'');
+  $('#pShort').textContent=p.short;
+  $('#pFeats').innerHTML=p.feats.map(f=>`<div class="col-6 col-md-3"><div class="mini-feat"><i class="bi bi-${f[0]}"></i><span>${f[1]}<br>${f[2]}</span></div></div>`).join('');
+  $('#aboutTxt').textContent=p.about;
+  $('#ingTxt').textContent=p.ing;
+  $('#howList').innerHTML=p.how.map(h=>`<li>${h}</li>`).join('');
+  const noteImg=n=>n[2].startsWith('images/')?`<img src="${n[2]}" alt="${n[1]}">`:`<i class="bi ${n[2]}"></i>`;
+  $('#notes').innerHTML=p.notes.map(n=>`<div class="col-4 note"><div class="note-circle">${noteImg(n)}</div><b>${n[0]}</b><small>${n[1]}</small></div>`).join('');
+  $('#notes2').innerHTML=p.notes.map(n=>`<div class="col-md-4"><div class="assure d-flex gap-3 align-items-center" style="display:flex!important"><div class="note-circle" style="width:58px;height:58px;flex:none;margin:0">${noteImg(n)}</div><span><b style="font-size:13px;display:block">${n[0]}</b><small class="text-muted">${n[1]}</small></span></div></div>`).join('');
+  $('#mainWish').dataset.wish=p.id; $('#wishLink').dataset.wish=p.id;
+
+  /* ----- gallery (4 views of the real image) ----- */
+  const views=[{s:1,x:50,y:50},{s:1.7,x:50,y:42},{s:2.5,x:50,y:58},{s:1.5,x:88,y:88}];
+  const main=$('#mainImg'),thumbs=$('#thumbs');
+  let cur=0;
+  main.src=p.img; main.alt=p.name;
+  thumbs.innerHTML=views.map((v,i)=>`<button type="button" data-i="${i}"><img src="${p.img}" alt="" style="transform:scale(${v.s});transform-origin:${v.x}% ${v.y}%"></button>`).join('');
+  function setView(i){
+    cur=(i+views.length)%views.length; const v=views[cur];
+    main.classList.add('swap');
+    setTimeout(()=>{main.style.transformOrigin=v.x+'% '+v.y+'%';main.style.transform='scale('+v.s+')';main.classList.remove('swap')},220);
+    [...thumbs.children].forEach((b,k)=>b.classList.toggle('on',k===cur));
+  }
+  setView(0);
+  thumbs.addEventListener('click',e=>{const b=e.target.closest('button');if(b)setView(+b.dataset.i)});
+  $('#mPrev').onclick=()=>setView(cur-1); $('#mNext').onclick=()=>setView(cur+1);
+  const box=$('#mainBox');
+  box.addEventListener('mousemove',e=>{const r=box.getBoundingClientRect();main.style.transformOrigin=((e.clientX-r.left)/r.width*100)+'% '+((e.clientY-r.top)/r.height*100)+'%';main.style.transform='scale('+(views[cur].s+.6)+')'});
+  box.addEventListener('mouseleave',()=>{const v=views[cur];main.style.transformOrigin=v.x+'% '+v.y+'%';main.style.transform='scale('+v.s+')'});
+
+  /* ----- qty / cart ----- */
+  let q=1; const qv=$('#qVal');
+  $('#qPlus').onclick=()=>{if(q<10)qv.textContent=++q;else showToast('Maximum 10 per order','exclamation-circle-fill')};
+  $('#qMinus').onclick=()=>{if(q>1)qv.textContent=--q};
+  $('#addBtn').onclick=()=>{Cart.add(p.id,q);const b=$('#addBtn'),o=b.innerHTML;b.innerHTML='<i class="bi bi-check2 me-2"></i>Added';setTimeout(()=>b.innerHTML=o,1200)};
+  $('#buyBtn').onclick=()=>{Cart.add(p.id,q,true);openCart()};
+
+  /* ----- share ----- */
+  document.addEventListener('click',e=>{
+    const s=e.target.closest('[data-share]'); if(!s)return; e.preventDefault();
+    const u=encodeURIComponent(location.href),t=encodeURIComponent(p.name+' – ScentAura');
+    const map={facebook:'https://www.facebook.com/sharer/sharer.php?u='+u,twitter:'https://twitter.com/intent/tweet?url='+u+'&text='+t,pinterest:'https://pinterest.com/pin/create/button/?url='+u+'&description='+t,whatsapp:'https://wa.me/?text='+t+'%20'+u};
+    window.open(map[s.dataset.share],'_blank','noopener');
+  });
+
+  /* ----- tabs ----- */
+  $('#pTabs').addEventListener('click',e=>{
+    const b=e.target.closest('[data-tab]'); if(!b)return;
+    document.querySelectorAll('#pTabs .nav-link').forEach(x=>x.classList.toggle('active',x===b));
+    document.querySelectorAll('.tab-pane2').forEach(x=>x.classList.toggle('show',x.id===b.dataset.tab));
+  });
+
+  /* ----- reviews ----- */
+  const RK='aura_reviews_'+p.id;
+  const seed=p.id==='royal-oud'
+   ?[{n:'Priya Sharma',d:'12 Apr 2025',r:5,t:'This perfume is simply amazing! The fragrance lasts all day and the oud smell is so rich and elegant. Highly recommended!',av:'images/avatar-priya.jpg',img:'images/review-img.jpg'}]
+   :[{n:'Priya Sharma',d:'12 Apr 2025',r:5,t:'Lovely '+(isPerf?'fragrance':'agarbatti')+'. Premium quality and it lasts long. Highly recommended!',av:'images/avatar-priya.jpg'},{n:'Rahul Mehta',d:'03 Mar 2025',r:4,t:'Great value and beautiful packaging. Delivery was quick.'}];
+  let extra=[];try{extra=JSON.parse(localStorage.getItem(RK))||[]}catch(e){}
+  function renderReviews(){
+    const all=[...extra,...seed];
+    $('#score').textContent=p.rating.toFixed(1);
+    $('#scoreStars').textContent=stars(p.rating);
+    $('#scoreCount').textContent='Based on '+(p.reviews+extra.length)+' Reviews';
+    $('#reviewList').innerHTML=all.map(r=>`<div class="review-item">${r.av?`<img class="av" src="${r.av}" alt="">`:`<div class="initial-av">${esc(r.n[0]).toUpperCase()}</div>`}
+      <div><b style="font-size:11.5px">${esc(r.n)}</b> <small class="text-muted ms-2" style="font-size:9px">${r.d}</small><br><span class="rating">${stars(r.r)}</span>
+      <p>${esc(r.t)}</p>${r.img?`<img class="review-thumb" src="${r.img}" alt="">`:''}</div></div>`).join('');
+  }
+  renderReviews();
+  let rate=5;
+  const pick=$('#starPick');
+  pick.addEventListener('click',e=>{const i=[...pick.children].indexOf(e.target.closest('i'));if(i<0)return;rate=i+1;[...pick.children].forEach((s,k)=>s.classList.toggle('on',k<rate))});
+  const modal=()=>bootstrap.Modal.getOrCreateInstance($('#revModal'));
+  $('#writeRev').onclick=()=>modal().show();
+  $('#revForm').addEventListener('submit',e=>{
+    e.preventDefault();
+    const d=new Date().toLocaleDateString('en-GB',{day:'2-digit',month:'short',year:'numeric'});
+    extra.unshift({n:$('#revName').value.trim(),d,r:rate,t:$('#revText').value.trim()});
+    try{localStorage.setItem(RK,JSON.stringify(extra))}catch(e){}
+    renderReviews(); modal().hide(); e.target.reset(); showToast('Thanks for your review!');
+  });
+
+  /* ----- you may also like ----- */
+  let order=[];
+  if(p.id==='royal-oud')order=[...RELATED_ROYAL,...PRODUCTS.filter(x=>x.type==='perfume'&&x.id!==p.id&&!RELATED_ROYAL.includes(x.id)).map(x=>x.id)];
+  else order=[...PRODUCTS.filter(x=>x.type===p.type&&x.id!==p.id).map(x=>x.id),...PRODUCTS.filter(x=>x.type!==p.type).map(x=>x.id)];
+  const grid=$('#alsoGrid');
+  grid.innerHTML=order.map(id=>cardHTML(findProduct(id),{col:'also-item',mrp:true})).join('');
+  $('#alsoPrev').onclick=()=>grid.scrollBy({left:-360});
+  $('#alsoNext').onclick=()=>grid.scrollBy({left:360});
+})();
+</script>
+</body>
+</html>
